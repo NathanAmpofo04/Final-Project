@@ -1,29 +1,29 @@
 # Status Report
 
-#### Your name
+#### Your Name
 
-TODO
+Nathan Ampofo
 
-#### Your section leader's name
+#### Your Section Leader's name 
 
-TODO
+Nathan Ampofo
 
-#### Project title
+#### Your Project Title 
 
-TODO
+Raspberry Pi Roomba
 
 ***
 
 Short answers for the below questions suffice. If you want to alter your plan for your project (and obtain approval for the same), be sure to email your section leader directly!
 
-#### What have you done for your project so far?
+#### What have you done for your project
 
-TODO
+I have obtained the Raspberry Pi and the vehicle it will be using 
 
 #### What have you not done for your project yet?
 
-TODO
+Formulated a concrete plan on what I think I can accomplish 
 
 #### What problems, if any, have you encountered?
 
-TODO
+No problems so far.
