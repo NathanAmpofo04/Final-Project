@@ -64,7 +64,7 @@ while True:
     x = accelerometer.get_x()
     y = accelerometer.get_y()
     
-    angle = round( math.degrees( math.atan2(y, x) ) )
+    angle = round( math.degrees( math.atan2(y, x) ) )  #This part of the code acts as a compass for the rc car 
     needle = ( angle + 90 + 15 ) // 30
 
     print("Send:")
