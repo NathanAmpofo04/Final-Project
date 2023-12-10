@@ -33,7 +33,7 @@ bot(19).servo_speed(0)
 # USES FUNCTIONS 
 from cyberbot import *
 # functions with arguments
-def straight():
+def straight():         #different functions for the cyber bot
  bot(18).servo_speed(75)
  bot(19).servo_speed(-75)
  sleep (3000)
@@ -62,7 +62,7 @@ sleep(1000)
 # rc car controller
 while True:
     x = accelerometer.get_x()
-    y = accelerometer.get_y()
+    y = accelerometer.get_y() 
     
     angle = round( math.degrees( math.atan2(y, x) ) )  #This part of the code acts as a compass for the rc car 
     needle = ( angle + 90 + 15 ) // 30
@@ -129,7 +129,7 @@ def left():
     bot(19).servo_speed(-75)
     sleep(250)
 
-while True:
+while True:   #Whiskers used as sensory for the robot 
     whisker_left = bot(7).read_digital()
     whisker_right = bot(9).read_digital()
     
