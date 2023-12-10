@@ -110,5 +110,39 @@ while True:
         display.show(Image.ALL_CLOCKS[needle])
         
         sleep(500)
+def forward():
+    bot(18).servo_speed(75)
+    bot(19).servo_speed(-75)
+
+def backwards():
+    bot(18).servo_speed(-75)
+    bot(19).servo_speed(75)
+    sleep(250)
+
+def right():
+    bot(18).servo_speed(75)
+    bot(19).servo_speed(75)
+    sleep(250)
+
+def left():
+    bot(18).servo_speed(-75)
+    bot(19).servo_speed(-75)
+    sleep(250)
+
+while True:
+    whisker_left = bot(7).read_digital()
+    whisker_right = bot(9).read_digital()
+    
+    if whisker_left == 0 and whisker_right == 0:     
+        backwards()                                 
+        right()
+    elif whisker_left == 1 and whisker_right == 0:   
+        backwards()                                  
+        left()
+    elif whisker_left == 0 and whisker_right == 1:  
+        backwards()                                   
+        right()
+    else:                                           
+        forward()                         
 
         #REMEMBER TO SCREW THE BLACK THING IF THE MOTHERBOARD DICONNECTS 
