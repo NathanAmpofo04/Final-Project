@@ -1,6 +1,6 @@
 #speed is in milliseconds
 #Makes robot go forward and backwards
-from cyberbot import *
+from cyberbot import *  #I had to download the cyberbot library for this import
 
 bot(18).servo_speed(75)             # Full speed forward
 bot(19).servo_speed(-75)
